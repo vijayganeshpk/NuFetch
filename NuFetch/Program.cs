@@ -8,5 +8,9 @@ namespace NuFetch {
     class Program {
         static void Main( string[] args ) {
         }
+
+        static async Task MainAsync(string[] args) {
+            await Task.Run( () => { } );
+        }
     }
 }
