@@ -1,4 +1,5 @@
 ﻿using CommandLine;
+using CommandLine.Text;
 
 namespace NuFetch {
     class ApplicationOption {
@@ -10,5 +11,11 @@ namespace NuFetch {
 
         [Option('t',"targetFolder",DefaultValue = "Packages", HelpText = "Target folder path to download the packages")]
         public string TargetFolder { get; set; }
+
+        [HelpOption]
+        public string GetUsage() {
+            return HelpText.AutoBuild( this,
+              ( HelpText current ) => HelpText.DefaultParsingErrorsHandler( this, current ) );
+        }
     }
 }
