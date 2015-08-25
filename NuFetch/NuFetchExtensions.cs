@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace NuFetch {
-    static class NuFetchExtensions {
-        public static string ToJson(this object val) {
+    internal static class NuFetchExtensions {
+        public static string ToJson( this object val ) {
             var settings = new JsonSerializerSettings {
                 ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             };
