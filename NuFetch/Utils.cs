@@ -1,14 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
+using System.Text;
 
 namespace NuFetch {
     public static class Utils {
         public static string GetFullFolderPath( string folderPath ) {
-            return string.Empty;
+            var finalFullPath = new StringBuilder(folderPath);
+
+            if( !Path.IsPathRooted( folderPath ) ) { // we have a relative path
+                finalFullPath.Clear();
+                finalFullPath.Append( Path.Combine( AppDomain.CurrentDomain.BaseDirectory, folderPath ) );
+            }
+
+            return finalFullPath.ToString();
         }
     }
 }
