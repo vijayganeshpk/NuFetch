@@ -4,13 +4,22 @@ using System.Text;
 
 namespace NuFetch {
     public static class Utils {
+        /// <summary>
+        /// Method for getting the abosulte path
+        /// </summary>
+        /// <param name="folderPath">Folder path, can be relative or absolute</param>
+        /// <returns>The determined absolute path from the input parameter</returns>
         public static string GetFullFolderPath( string folderPath ) {
+            if (folderPath == null) throw new ArgumentNullException(nameof(folderPath));
+
             var finalFullPath = new StringBuilder(folderPath);
 
-            if( !Path.IsPathRooted( folderPath ) ) { // we have a relative path
-                finalFullPath.Clear();
-                finalFullPath.Append( Path.Combine( AppDomain.CurrentDomain.BaseDirectory, folderPath ) );
-            }
+            // no need to do anything for absolute paths
+            if (Path.IsPathRooted(folderPath)) return finalFullPath.ToString(); 
+            
+            // convert relative paths to absolute path
+            finalFullPath.Clear();
+            finalFullPath.Append( Path.Combine( AppDomain.CurrentDomain.BaseDirectory, folderPath ) );
 
             return finalFullPath.ToString();
         }
