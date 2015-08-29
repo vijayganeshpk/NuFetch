@@ -1,7 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using CommandLine;
 using NLog;
-using NuGet;
+using NuFetchLib;
 
 namespace NuFetch {
     internal class Program {
@@ -15,26 +15,18 @@ namespace NuFetch {
             await Task.Run( () => {
                 log.Trace( $"Entered MainAsync(string[] args='{string.Join( ", ", args )}')" );
 
-                var appOptions = new ApplicationOption();
-                var parseResult = CommandLine.Parser.Default.ParseArguments( args, appOptions );
+                var appOptions = new NuFetchOption();
+                var parseResult = Parser.Default.ParseArguments( args, appOptions );
 
                 log.Trace( $"arguments parsing was successful? {parseResult}" );
 
-                if ( !parseResult ) {
+                if( !parseResult ) {
                     return;
                 }
 
                 log.Debug( $"Application options: {appOptions.ToJson()}" );
 
-                var repo = PackageRepositoryFactory.Default.CreateRepository( appOptions.ServerSource );
-
-                log.Trace( $"Connected to repository {repo.Source}" );
-
-                var package = repo.FindPackage( appOptions.PackageId );
-
-                log.Debug( $"Found package '{package.Id}'" );
-                log.Debug( $"Version: {package.Version}" );
-                log.Debug( $"Authors: {package.Authors}" );
+                Utils.GetPackageAndDependencies( appOptions.PackageId, appOptions.PackageVersion, appOptions.ServerSource, Utils.GetFullFolderPath( appOptions.TargetFolder ), appOptions.OverwriteExistingFiles, appOptions.IncludePreRelease, appOptions.AllowUnlisted, appOptions.VersionTypeToDownload );
 
                 log.Trace( "Exiting MainAsync" );
             } );
