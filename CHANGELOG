@@ -1,0 +1,7 @@
+version 0.1-aplha
+=================
+1. Initial release
+2. Option to overwrite existing files
+3. Option to include/exclude pre-release packages
+4. Option to allow unlisted packages
+5. Option to mention dependency version type (Min/Max)
