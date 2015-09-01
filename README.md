@@ -2,8 +2,10 @@
 NuGet packages with dependency downloader
 
 Usage:
-NuFetch -p <packageid> [-s <sourceserver>] [-v <packageversion>] [-t <targetfolder>] [-o] [-i] [-a]
 
+`NuFetch -p <packageid> [-s <sourceserver>] [-v <packageversion>] [-t <targetfolder>] [-o] [-i] [-a]`
+
+```
  -s, --source             (Default: https://www.nuget.org/api/v2/) NuGet
                            repository source server URL
 
@@ -29,3 +31,4 @@ NuFetch -p <packageid> [-s <sourceserver>] [-v <packageversion>] [-t <targetfold
                            should search for package in unlisted packages
 
   --help                   Display this help screen.
+  ```
