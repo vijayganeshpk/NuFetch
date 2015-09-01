@@ -1,6 +1,8 @@
 # NuFetch
 NuGet packages with dependency downloader
 
+More info at https://blog.vijay.name/nufetch
+
 Usage:
 
 `NuFetch -p <packageid> [-s <sourceserver>] [-v <packageversion>] [-t <targetfolder>] [-o] [-i] [-a]`
