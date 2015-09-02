@@ -66,8 +66,8 @@ namespace NuFetchLib {
                 foreach( var dep in dset.Dependencies ) {
                     log.Debug( $"Processing dependency '{dep.Id}'" );
                     var dependencyVersion = depVersionToDownload == DependencyVersionTypeToDownload.Max
-                                                ? dep.VersionSpec.MaxVersion.ToString()
-                                                : dep.VersionSpec.MinVersion.ToString();
+                                                ? dep.VersionSpec?.MaxVersion?.ToString()
+                                                : dep.VersionSpec?.MinVersion?.ToString();
                     GetPackageAndDependencies( dep.Id, dependencyVersion, sourceServer, targetFolder, overwriteExistingFiles, includePrerelease, allowUnlisted, depVersionToDownload );
                 }
             }
