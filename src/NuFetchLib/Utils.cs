@@ -32,20 +32,29 @@ namespace NuFetchLib {
             return finalFullPath.ToString();
         }
 
+        public static void GetPackageAndDependencies( NuFetchOption appOptions ) {
+            GetPackageAndDependencies( appOptions.PackageId, appOptions.PackageVersion, appOptions.ServerSource,
+                                       GetFullFolderPath( appOptions.TargetFolder ), appOptions.OverwriteExistingFiles,
+                                       appOptions.IncludePreRelease, appOptions.AllowUnlisted,
+                                       appOptions.VersionTypeToDownload );
+        }
+
         public static void GetPackageAndDependencies( string packageId, string packageVersion, string sourceServer, string targetFolder, bool overwriteExistingFiles, bool includePrerelease, bool allowUnlisted, DependencyVersionTypeToDownload depVersionToDownload) {
+            log.Trace( $"Entered GetPackageAndDependencies(packageId='{packageId}', packageVersion='{packageVersion}', sourceServer='{sourceServer}', targetFolder='{targetFolder}', overwriteExistingFiles={overwriteExistingFiles}, includePrerelease={includePrerelease}, allowUnlisted={allowUnlisted}, depVersionToDownload={depVersionToDownload})" );
 
             var repo = PackageRepositoryFactory.Default.CreateRepository( sourceServer );
             var package = repo.FindPackage( packageId, packageVersion==null?null:new SemanticVersion(packageVersion),NullConstraintProvider.Instance, includePrerelease, allowUnlisted ) as DataServicePackage;
 
             if( package == null ) {
-                log.Warn( $"Package '{packageId}' could not be found in the repository '{sourceServer}', or it could be converted as DataServicePackage" );
+                log.Warn( $"Package '{packageId} v{packageVersion}' could not be found in the repository '{sourceServer}', or it could be converted as DataServicePackage" );
+                
                 return;
             }
 
             var finalPackagePath = Path.Combine( targetFolder, $"{package.Id}.{package.Version}.nupkg" );
 
             if( File.Exists( finalPackagePath ) && !overwriteExistingFiles ) {
-                log.Debug( $"File '{finalPackagePath}' already exists, skipping it" );
+                log.Info( $"Skipping '{finalPackagePath}'" );
                 return;
             }
 
@@ -57,11 +66,11 @@ namespace NuFetchLib {
                 log.Debug($"Downloading package '{package.Id}' from '{package.DownloadUrl}' ... ");
                 var downloader = new PackageDownloader();
                 downloader.DownloadPackage( package.DownloadUrl, package, fs );
-                log.Debug($"... done downloading package {package.Id}");
+                log.Info($"Package {package.Id} downloaded!");
             }
 
             foreach( var dset in package.DependencySets.Where( dset => dset.Dependencies.Count > 0 ) ) {
-                log.Debug( $"Downloading dependencies for the dependency set: {dset.TargetFramework?.ToString() ?? "<default set>"} " );
+                log.Debug( $"Processing dependency set: {dset.TargetFramework?.ToString() ?? "<default set>"} " );
 
                 foreach( var dep in dset.Dependencies ) {
                     log.Debug( $"Processing dependency '{dep.Id}'" );
@@ -71,6 +80,7 @@ namespace NuFetchLib {
                     GetPackageAndDependencies( dep.Id, dependencyVersion, sourceServer, targetFolder, overwriteExistingFiles, includePrerelease, allowUnlisted, depVersionToDownload );
                 }
             }
+            log.Trace( "Exiting GetPackageAndDependencies" );
         }
     }
 }

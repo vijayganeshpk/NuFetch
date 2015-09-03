@@ -26,7 +26,7 @@ namespace NuFetch {
 
                 //log.Debug( $"Application options: {appOptions.ToJson()}" );
 
-                Utils.GetPackageAndDependencies( appOptions.PackageId, appOptions.PackageVersion, appOptions.ServerSource, Utils.GetFullFolderPath( appOptions.TargetFolder ), appOptions.OverwriteExistingFiles, appOptions.IncludePreRelease, appOptions.AllowUnlisted, appOptions.VersionTypeToDownload );
+                Utils.GetPackageAndDependencies( appOptions );
 
                 log.Trace( "Exiting MainAsync" );
             } );

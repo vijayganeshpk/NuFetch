@@ -59,7 +59,7 @@
     <Compile Include="..\SolutionItems\AssemblyInfo.cs">
       <Link>AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="ApplicationOption.cs" />
+    <Compile Include="NuFetchOption.cs" />
     <Compile Include="DependencyVersionTypeToDownload.cs" />
     <Compile Include="NuFetchExtensions.cs" />
     <Compile Include="Utils.cs" />
