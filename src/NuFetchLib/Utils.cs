@@ -38,7 +38,7 @@ namespace NuFetchLib {
             var package = repo.FindPackage( packageId, packageVersion==null?null:new SemanticVersion(packageVersion),NullConstraintProvider.Instance, includePrerelease, allowUnlisted ) as DataServicePackage;
 
             if( package == null ) {
-                log.Debug( $"Package '{packageId}' could not be found in the repository '{sourceServer}', or it could be converted as DataServicePackage" );
+                log.Warn( $"Package '{packageId}' could not be found in the repository '{sourceServer}', or it could be converted as DataServicePackage" );
                 return;
             }
 
