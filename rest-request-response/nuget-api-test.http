@@ -1,0 +1,5 @@
+### Entry point api call
+https://api.nuget.org/v3/index.json
+
+### Search Service
+https://api-v2v3search-1.nuget.org/query?q=System.Data.SQLite&skip=0&take=20&prerelease=false&semVerLevel=1.0.1

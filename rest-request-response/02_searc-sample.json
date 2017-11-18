@@ -1,0 +1,747 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: application/json
+Content-Encoding: gzip
+Expires: 0
+Vary: Accept-Encoding
+Server: Microsoft-IIS/10.0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-CorrelationId: 00000000-0000-0000-0000-000000000000
+X-Powered-By: ASP.NET
+Arr-Disable-Session-Affinity: true
+Date: Fri, 17 Nov 2017 20:51:31 GMT
+Content-Length: 3880
+
+{
+  "@context": {
+    "@vocab": "http://schema.nuget.org/schema#",
+    "@base": "https://api.nuget.org/v3/registration3/"
+  },
+  "totalHits": 22,
+  "lastReopen": "2017-11-17T20:48:03.4658926Z",
+  "index": "v3-lucene2-v2v3-20171018",
+  "data": [
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite/index.json",
+      "id": "System.Data.SQLite",
+      "version": "1.0.106",
+      "description": "The official SQLite database engine for both x86 and x64 along with the ADO.NET provider.  This package includes support for LINQ and Entity Framework 6.",
+      "summary": "",
+      "title": "System.Data.SQLite (x86/x64)",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 1448619,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 9516,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6/index.json",
+      "id": "System.Data.SQLite.EF6",
+      "version": "1.0.106",
+      "description": "Support for Entity Framework 6 using System.Data.SQLite.",
+      "summary": "",
+      "title": "System.Data.SQLite EF6",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 1119448,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 8944,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.core/index.json",
+      "id": "System.Data.SQLite.Core",
+      "version": "1.0.106",
+      "description": "The official SQLite database engine for both x86 and x64 along with the ADO.NET provider.",
+      "summary": "",
+      "title": "System.Data.SQLite Core (x86/x64)",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 1907939,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 12550,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.linq/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.linq/index.json",
+      "id": "System.Data.SQLite.Linq",
+      "version": "1.0.106",
+      "description": "Support for LINQ using System.Data.SQLite.",
+      "summary": "",
+      "title": "System.Data.SQLite LINQ",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 1091645,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 9029,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.linq/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.mac/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.mac/index.json",
+      "id": "System.Data.SQLite.Mac",
+      "version": "1.0.104.2",
+      "description": "ADO.NET Data Provider for SQLite. Modified to work with Xamarin.Mac 4.5 and use an included libsqlite3.dylib file.",
+      "summary": "",
+      "title": "System.Data.SQLite.Mac",
+      "projectUrl": "https://github.com/PingmanTools/System.Data.SQLite.Mac",
+      "tags": [],
+      "authors": [
+        "https://system.data.sqlite.org/"
+      ],
+      "totalDownloads": 212,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.104.2",
+          "downloads": 212,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.mac/1.0.104.2.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.x64/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.x64/index.json",
+      "id": "System.Data.SQLite.x64",
+      "version": "1.0.106",
+      "description": "This is a legacy package; if possible, please use either the \"System.Data.SQLite\" or \"System.Data.SQLite.Core\" package instead.  The official SQLite database engine combined with a complete ADO.NET provider all rolled into a single mixed-mode assembly for x64.",
+      "summary": "",
+      "title": "System.Data.SQLite.x64",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 148801,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 238,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.x64/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.x86/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.x86/index.json",
+      "id": "System.Data.SQLite.x86",
+      "version": "1.0.106",
+      "description": "This is a legacy package; if possible, please use either the \"System.Data.SQLite\" or \"System.Data.SQLite.Core\" package instead.  The official SQLite database engine combined with a complete ADO.NET provider all rolled into a single mixed-mode assembly for x86.",
+      "summary": "",
+      "title": "System.Data.SQLite.x86",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 98652,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 210,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.x86/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.msil/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.msil/index.json",
+      "id": "System.Data.SQLite.MSIL",
+      "version": "1.0.106",
+      "description": "This is a legacy package; if possible, please use either the \"System.Data.SQLite\" or \"System.Data.SQLite.Core\" package instead.  An ADO.NET provider for SQLite (managed-only).",
+      "summary": "",
+      "title": "System.Data.SQLite (MSIL)",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 53498,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 78,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.msil/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/faithlife.system.data.sqlite/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/faithlife.system.data.sqlite/index.json",
+      "id": "Faithlife.System.Data.SQLite",
+      "version": "2.11.4",
+      "description": "An independent implementation of an ADO.NET provider for SQLite.",
+      "summary": "",
+      "title": "Faithlife.System.Data.SQLite",
+      "tags": [],
+      "authors": [
+        "Faithlife Corporation"
+      ],
+      "totalDownloads": 1219,
+      "verified": false,
+      "versions": [
+        {
+          "version": "2.11.2",
+          "downloads": 194,
+          "@id": "https://api.nuget.org/v3/registration3/faithlife.system.data.sqlite/2.11.2.json"
+        },
+        {
+          "version": "2.11.3",
+          "downloads": 123,
+          "@id": "https://api.nuget.org/v3/registration3/faithlife.system.data.sqlite/2.11.3.json"
+        },
+        {
+          "version": "2.11.4",
+          "downloads": 902,
+          "@id": "https://api.nuget.org/v3/registration3/faithlife.system.data.sqlite/2.11.4.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.msil/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.msil/index.json",
+      "id": "System.Data.SQLite.Core.MSIL",
+      "version": "1.0.106",
+      "description": "An ADO.NET provider for SQLite (managed-only).",
+      "summary": "",
+      "title": "System.Data.SQLite Core (MSIL)",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "SQLite Development Team"
+      ],
+      "totalDownloads": 55518,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.106",
+          "downloads": 209,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.msil/1.0.106.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6.migrations/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6.migrations/index.json",
+      "id": "System.Data.SQLite.EF6.Migrations",
+      "version": "1.0.104",
+      "description": "Entity framework 6.x migration provider for SQLite",
+      "summary": "",
+      "title": "System.Data.SQLite.EF6.Migrations",
+      "projectUrl": "http://sqliteef6migrations.codeplex.com/",
+      "tags": [
+        "EntityFramework",
+        "Migration",
+        "SQLite"
+      ],
+      "authors": [
+        "Bubi"
+      ],
+      "totalDownloads": 2483,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.102",
+          "downloads": 122,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6.migrations/1.0.102.json"
+        },
+        {
+          "version": "1.0.103",
+          "downloads": 447,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6.migrations/1.0.103.json"
+        },
+        {
+          "version": "1.0.104",
+          "downloads": 1914,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.ef6.migrations/1.0.104.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.fts5/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.fts5/index.json",
+      "id": "System.Data.SQLite.Core.FTS5",
+      "version": "1.0.0.1",
+      "description": "The experimental SQLite database engine for both x86 and x64 along with the ADO.NET provider with enable FTS5 extension by default.",
+      "summary": "",
+      "title": "System.Data.SQLite Core FTS5 (x86/x64)",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "fts5",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "Radik Komissaroff"
+      ],
+      "totalDownloads": 123,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.0.1",
+          "downloads": 123,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.fts5/1.0.0.1.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.icu/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.icu/index.json",
+      "id": "System.Data.SQLite.Core.ICU",
+      "version": "1.0.0.2",
+      "description": "The experimental SQLite database engine for both x86 and x64 along with the ADO.NET provider with support ICU.",
+      "summary": "",
+      "title": "System.Data.SQLite.ICU (x86/x64)",
+      "iconUrl": "https://system.data.sqlite.org/images/sqlite128.png",
+      "licenseUrl": "https://www.sqlite.org/copyright.html",
+      "projectUrl": "https://system.data.sqlite.org/",
+      "tags": [
+        "sqlite",
+        "icu",
+        "database",
+        "ado.net",
+        "provider",
+        "interop"
+      ],
+      "authors": [
+        "Radik Komissaroff"
+      ],
+      "totalDownloads": 190,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.0.1",
+          "downloads": 60,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.icu/1.0.0.1.json"
+        },
+        {
+          "version": "1.0.0.2",
+          "downloads": 130,
+          "@id": "https://api.nuget.org/v3/registration3/system.data.sqlite.core.icu/1.0.0.2.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/microsoft.data.sqlite.winrt/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/microsoft.data.sqlite.winrt/index.json",
+      "id": "Microsoft.Data.Sqlite.WinRT",
+      "version": "1.0.1",
+      "description": "SQLite implementation of the System.Data.Common provider model modified to support WinRT for Windows 8.1 and Windows Phone 8.1.\r\nAlso includes .NET Core implementation of System.Data.Common modified to support WinRT for Windows 8.1 and Windows Phone 8.1.",
+      "summary": "",
+      "title": "Microsoft.Data.Sqlite for WinRT",
+      "projectUrl": "https://github.com/TheBlueSky/Microsoft.Data.Sqlite.WinRT",
+      "tags": [
+        "System.Data",
+        "SQLite",
+        "ADO.NET",
+        "WinRT"
+      ],
+      "authors": [
+        "TheBlueSky"
+      ],
+      "totalDownloads": 501,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "downloads": 149,
+          "@id": "https://api.nuget.org/v3/registration3/microsoft.data.sqlite.winrt/1.0.0.json"
+        },
+        {
+          "version": "1.0.1",
+          "downloads": 352,
+          "@id": "https://api.nuget.org/v3/registration3/microsoft.data.sqlite.winrt/1.0.1.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/sqlitehelper-redeux/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/sqlitehelper-redeux/index.json",
+      "id": "SQLiteHelper-Redeux",
+      "version": "3.0.3",
+      "description": "Easy access to frequently-used SQLite operations - things that otherwise need be done with hard-coded SQL strings.",
+      "summary": "",
+      "title": "SQLiteHelper Redeux",
+      "licenseUrl": "https://raw.githubusercontent.com/jhorv/SQLiteHelper/master/LICENSE",
+      "projectUrl": "https://github.com/jhorv/SQLiteHelper",
+      "tags": [
+        "SQLite",
+        "System.Data.SQLite"
+      ],
+      "authors": [
+        "andrew-su jho"
+      ],
+      "totalDownloads": 292,
+      "verified": false,
+      "versions": [
+        {
+          "version": "2.0.0",
+          "downloads": 52,
+          "@id": "https://api.nuget.org/v3/registration3/sqlitehelper-redeux/2.0.0.json"
+        },
+        {
+          "version": "3.0.0",
+          "downloads": 52,
+          "@id": "https://api.nuget.org/v3/registration3/sqlitehelper-redeux/3.0.0.json"
+        },
+        {
+          "version": "3.0.1",
+          "downloads": 55,
+          "@id": "https://api.nuget.org/v3/registration3/sqlitehelper-redeux/3.0.1.json"
+        },
+        {
+          "version": "3.0.2",
+          "downloads": 55,
+          "@id": "https://api.nuget.org/v3/registration3/sqlitehelper-redeux/3.0.2.json"
+        },
+        {
+          "version": "3.0.3",
+          "downloads": 78,
+          "@id": "https://api.nuget.org/v3/registration3/sqlitehelper-redeux/3.0.3.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/spanql/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/spanql/index.json",
+      "id": "SpanQL",
+      "version": "1.6.0",
+      "description": "A wrapper over System.Data.SQLite to simplify querying",
+      "summary": "A wrapper over System.Data.SQLite to simplify querying",
+      "title": "SpanQL",
+      "licenseUrl": "https://raw.githubusercontent.com/Spanfile/SpanQL/master/LICENSE",
+      "projectUrl": "https://github.com/Spanfile/SpanQL",
+      "tags": [
+        "sql",
+        "sqlite"
+      ],
+      "authors": [
+        "Santeri Kasvi"
+      ],
+      "totalDownloads": 1225,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.6.0",
+          "downloads": 261,
+          "@id": "https://api.nuget.org/v3/registration3/spanql/1.6.0.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/spatialitesharp/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/spatialitesharp/index.json",
+      "id": "SpatialiteSharp",
+      "version": "4.2.0",
+      "description": "Adds Spatialite to System.Data.SQLite",
+      "summary": "",
+      "title": "SpatialiteSharp",
+      "projectUrl": "https://github.com/Smartrak/SpatialiteSharp",
+      "tags": [],
+      "authors": [
+        "dave"
+      ],
+      "totalDownloads": 1826,
+      "verified": false,
+      "versions": [
+        {
+          "version": "4.1.9.2",
+          "downloads": 159,
+          "@id": "https://api.nuget.org/v3/registration3/spatialitesharp/4.1.9.2.json"
+        },
+        {
+          "version": "4.1.9.3",
+          "downloads": 320,
+          "@id": "https://api.nuget.org/v3/registration3/spatialitesharp/4.1.9.3.json"
+        },
+        {
+          "version": "4.2.0",
+          "downloads": 1347,
+          "@id": "https://api.nuget.org/v3/registration3/spatialitesharp/4.2.0.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/linq2db.sqlite/index.json",
+      "id": "linq2db.SQLite",
+      "version": "1.9.0",
+      "description": "LINQ to SQLite is a data access technology that provides a run-time infrastructure for managing relational data as objects.",
+      "summary": "This package includes a T4 template to generate data models for SQLite database and references to the linq2db and System.Data.SQLite nugets.",
+      "title": "LINQ to SQLite",
+      "iconUrl": "http://www.gravatar.com/avatar/fc2e509b6ed116b9aa29a7988fdb8990?s=320",
+      "licenseUrl": "https://github.com/linq2db/linq2db/blob/master/MIT-LICENSE.txt",
+      "projectUrl": "https://github.com/linq2db/linq2db",
+      "tags": [
+        "linq",
+        "linq2db",
+        "SQLite",
+        "LinqToDB",
+        "ORM",
+        "database",
+        "DB",
+        "SQL"
+      ],
+      "authors": [
+        "Igor Tkachev"
+      ],
+      "totalDownloads": 10872,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.7",
+          "downloads": 1364,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.0.7.json"
+        },
+        {
+          "version": "1.0.7.2",
+          "downloads": 305,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.0.7.2.json"
+        },
+        {
+          "version": "1.0.7.3",
+          "downloads": 2127,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.0.7.3.json"
+        },
+        {
+          "version": "1.7.5",
+          "downloads": 163,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.7.5.json"
+        },
+        {
+          "version": "1.7.6",
+          "downloads": 697,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.7.6.json"
+        },
+        {
+          "version": "1.8.0",
+          "downloads": 283,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.8.0.json"
+        },
+        {
+          "version": "1.8.1",
+          "downloads": 64,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.8.1.json"
+        },
+        {
+          "version": "1.8.2",
+          "downloads": 297,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.8.2.json"
+        },
+        {
+          "version": "1.8.3",
+          "downloads": 390,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.8.3.json"
+        },
+        {
+          "version": "1.9.0",
+          "downloads": 378,
+          "@id": "https://api.nuget.org/v3/registration3/linq2db.sqlite/1.9.0.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/iqtoolkit.sqlite/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/iqtoolkit.sqlite/index.json",
+      "id": "IQToolkit.SQLite",
+      "version": "1.0.0",
+      "description": "IQToolkit ORM for SQLite (System.Data.SQLite)",
+      "summary": "",
+      "title": "IQToolkit ORM for SQLite",
+      "projectUrl": "https://github.com/mattwar/iqtoolkit",
+      "tags": [],
+      "authors": [
+        "Matt Warren"
+      ],
+      "totalDownloads": 54,
+      "verified": false,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "downloads": 54,
+          "@id": "https://api.nuget.org/v3/registration3/iqtoolkit.sqlite/1.0.0.json"
+        }
+      ]
+    },
+    {
+      "@id": "https://api.nuget.org/v3/registration3/dapper.rainbow.sqlite/index.json",
+      "@type": "Package",
+      "registration": "https://api.nuget.org/v3/registration3/dapper.rainbow.sqlite/index.json",
+      "id": "Dapper.Rainbow.SQLite",
+      "version": "0.2.2",
+      "description": "Trivial micro-orm implemented on Dapper, provides with CRUD helpers. specialize to handle SQLite",
+      "summary": "Uses Nuget System.Data.SQLite.x86 for Windows and System.Data.SQLite.MSIL for other OS\n        A demo is available at https://gist.github.com/1599013 .\n        The implementation was extracted from http://data.stackexchange.com source at: http://code.google.com/p/stack-exchange-data-explorer/ .\n        Data explorer uses \"Rainbow\" exclusively for all database access.",
+      "title": "Dapper.Rainbow.SQLite",
+      "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0",
+      "projectUrl": "https://github.com/antonheryanto/dapper-rainbow-sqlite",
+      "tags": [
+        "orm",
+        "dapper",
+        "micro-orm",
+        "sqlite"
+      ],
+      "authors": [
+        "Sam Saffron,  Anton Heryanto"
+      ],
+      "totalDownloads": 2638,
+      "verified": false,
+      "versions": [
+        {
+          "version": "0.1.1",
+          "downloads": 236,
+          "@id": "https://api.nuget.org/v3/registration3/dapper.rainbow.sqlite/0.1.1.json"
+        },
+        {
+          "version": "0.1.2",
+          "downloads": 1180,
+          "@id": "https://api.nuget.org/v3/registration3/dapper.rainbow.sqlite/0.1.2.json"
+        },
+        {
+          "version": "0.2.0",
+          "downloads": 166,
+          "@id": "https://api.nuget.org/v3/registration3/dapper.rainbow.sqlite/0.2.0.json"
+        },
+        {
+          "version": "0.2.1",
+          "downloads": 246,
+          "@id": "https://api.nuget.org/v3/registration3/dapper.rainbow.sqlite/0.2.1.json"
+        },
+        {
+          "version": "0.2.2",
+          "downloads": 611,
+          "@id": "https://api.nuget.org/v3/registration3/dapper.rainbow.sqlite/0.2.2.json"
+        }
+      ]
+    }
+  ]
+}
